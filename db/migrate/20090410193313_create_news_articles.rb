@@ -5,8 +5,7 @@ class CreateNewsArticles < ActiveRecord::Migration
       t.string :slug
       t.datetime :release_date 
       t.belongs_to :category 
-      t.belongs_to :attachment
-      t.integer :attachment_version 
+      t.string :image
       t.text :summary 
       t.text :body, :size => (64.kilobytes + 1) 
     end

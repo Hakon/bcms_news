@@ -1,7 +1,8 @@
 class NewsArticle < ActiveRecord::Base
 
-  acts_as_content_block :belongs_to_attachment => true, :taggable => true
+  acts_as_content_block :taggable => true
   
+  mount_uploader :image, NewsArticleUploader
   belongs_to :category
 
   validates_presence_of :name, :release_date
