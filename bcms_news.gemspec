@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
     "app/controllers/cms/news_articles_controller.rb",
      "app/controllers/news_articles_controller.rb",
      "app/models/news_article.rb",
-     "app/uploaders/news_article_uploader.rb",
      "app/portlets/news_archive_portlet.rb",
      "app/portlets/news_article_portlet.rb",
      "app/portlets/recent_news_portlet.rb",
